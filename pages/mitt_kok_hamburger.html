@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://mittkok.expressen.se/recept/saftiga-cheeseburgare/ -->
+<html lang="sv-SE" class=" flexbox flexwrap objectfit object-fit"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"><script type="text/javascript" src="./mitt_kok_hamburger_files/a1e7052088"></script><script src="./mitt_kok_hamburger_files/nr-998.min.js.download"></script><script async="" src="./mitt_kok_hamburger_files/fbds.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="apple-itunes-app" content="app-id=672739159">
+<title>Saftiga cheeseburgare - Mitt kök</title>
+<link rel="pingback" href="http://mittkok.expressen.se/xmlrpc.php">
+<link rel="shortcut icon" href="http://mittkok.expressen.se/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="http://mittkok.expressen.se/favicon.png">
+<link rel="publisher" href="http://plus.google.com/103111928273361865749">
+<script>var MittKok = {"links":{"login":"https:\/\/mittkok.expressen.se\/secure-login\/?returnto=%2Frecept%2Fsaftiga-cheeseburgare%2F","registration":"https:\/\/mittkok.expressen.se\/secure-login\/?registration=1&returnto=%2Frecept%2Fsaftiga-cheeseburgare%2F"},"fusion":{"adServer":"fusion.expressen.se","params":{"ingredients":["cheeseburgare%3a","n%c3%b6tf%c3%a4rs_av_h%c3%b6grev","salt_och_svartpeppar","cheddar_ost_eller_gruy%c3%a8re_att_hyvla","gula_l%c3%b6kar","saltgurka","sm%c3%b6r_till_stekning","%c3%a4ggula","senap","matolja_%28neutralolja%29","vitvinsvin%c3%a4ger"],"author":"tommy+myllym%c3%a4ki","title":"70853","typ":["middag"],"tema":["fest"],"huvudingrediens":["k%c3%b6ttf%c3%a4rs"]},"mediazone":"exp.mitt_kok.0.0.artikel"},"device":"desktop","user":{"id":0,"name":""},"post":{"id":70853,"type":"recept","title":"Saftiga cheeseburgare","link":"http:\/\/mittkok.expressen.se\/recept\/saftiga-cheeseburgare\/"},"query":{"page":"","recept":"saftiga-cheeseburgare","post_type":"recept","name":"saftiga-cheeseburgare"}};var ADMIN_AJAX_URL = "http:\/\/mittkok.expressen.se\/wp-admin\/admin-ajax.php";var AJAX_URL = "/ajax.php"</script>
+<!-- All in One SEO Pack 2.3.9.2 by Michael Torbert of Semper Fi Web Design[282,330] -->
+<meta name="description" content="Myllymäkis saftiga cheeseburgare kan man inte få nog av!">
+
+<link rel="canonical" href="http://mittkok.expressen.se/recept/saftiga-cheeseburgare/">
+<meta property="og:title" content="Saftiga cheeseburgare - Mitt kök">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://mittkok.expressen.se/recept/saftiga-cheeseburgare/">
+<meta property="og:image" content="http://mittkok.expressen.se/wp-content/uploads/2014/12/ead61aa3-7b80-466e-8183-d86ee18190538-636x424.jpg">
+<meta property="og:site_name" content="Mitt Kök">
+<meta property="og:description" content="Myllymäkis saftiga cheeseburgare kan man inte få nog av!">
+<meta property="article:published_time" content="2014-12-11T11:30:39Z">
+<meta property="article:modified_time" content="2014-12-11T15:25:55Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Saftiga cheeseburgare - Mitt kök">
+<meta name="twitter:description" content="Myllymäkis saftiga cheeseburgare kan man inte få nog av!">
+<meta name="twitter:image" content="http://mittkok.expressen.se/wp-content/uploads/2014/12/ead61aa3-7b80-466e-8183-d86ee18190538-636x424.jpg">
+<!-- /all in one seo pack -->
+<link rel="dns-prefetch" href="http://mittkok.expressen.se/">
+<link rel="dns-prefetch" href="http://assets.expressen.se/">
+<link rel="dns-prefetch" href="http://pp.lp4.io/">
+<link rel="dns-prefetch" href="http://mmetrix.mobi/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="stylesheet" id="bd_embed-group-css" href="./mitt_kok_hamburger_files/saved_resource" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var mittkok_followme_data = {"ajaxurl":"http:\/\/mittkok.expressen.se\/wp-admin\/admin-ajax.php?action=","icon_small_follow":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_small_follow.png","icon_small_unfollow":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_small_unfollow.png","icon_follow":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_follow.png","icon_unfollow":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_unfollow.png","icon_like":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/social_save.svg","icon_liked":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/social_saved.svg","icon_like_red":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_save02.png","icon_loading":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/ajax-loader-t.gif","subscribe_text":"F\u00f6lj","unsubscribe_text":"Sluta f\u00f6lja","favorite_text":"Spara","unfavorite_text":"Sparad!","favorited_text":"Sparad","login_message":"HEJ MATV\u00c4N!\nVill du f\u00f6lja andra matv\u00e4nner, spara \u00e4lsklingsrecept och l\u00e4gga in dina egna recept? Logga in eller bli medlem. Det g\u00e5r snabbt och \u00e4r gratis!","registration_url":"http:\/\/mittkok.expressen.se\/registrera\/?follow=","registration_url2":"http:\/\/mittkok.expressen.se\/registrera\/?recipe=","loggedIn":"","hideTooltipFollow":"","hideTooltipSave":""};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var saveData = {"ajaxUrl":"http:\/\/mittkok.expressen.se\/wp-admin\/admin-ajax.php","iconSave":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_save02.png","iconSaved":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/icon_unfollow.png","iconHeart":"http:\/\/mittkok.expressen.se\/wp-content\/themes\/mittkok2015\/images\/social_save.svg"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var omniPageData = {"data":{"report_suite":"exabdev","site":"mittkok.expressen.se","auto_refresh":"false","device_type":"desktop","screen_orientation":"landscape","adblock":"true","autostart":"false","ishybrid":"false","ispremium":"false","customer_id":"unavailable","event":{"click":"","component":false,"login":{"type":"","state":"unavailable"},"registration":{"type":"","state":""},"newSearch":{"sort":"","type":"","query":"","filter":""},"single_page_application":false},"page":{"content_info":{"id":70853,"title":"Saftiga cheeseburgare","author":"Tommy Myllym\u00e4ki","publish_date":"2014-12-11 11:30","hour_of_day":"10:24 PM|Saturday","article_type":"unlocked","content_type":"recipe"},"page_info":{"channel":"mitt kok","site_section":"mitt kok","page_type":"200","login_status":"non-registered","language":"sv","page_name":"mitt kok:recipe:saftiga cheeseburgare"}}},"isProd":"yes"};
+var _analytics = {"report_suite":"exabdev","site":"mittkok.expressen.se","auto_refresh":"false","device_type":"desktop","screen_orientation":"landscape","adblock":"true","autostart":"false","ishybrid":"false","ispremium":"false","customer_id":"unavailable","event":{"click":"","component":false,"login":{"type":"","state":"unavailable"},"registration":{"type":"","state":""},"newSearch":{"sort":"","type":"","query":"","filter":""},"single_page_application":false},"page":{"content_info":{"id":70853,"title":"Saftiga cheeseburgare","author":"Tommy Myllym\u00e4ki","publish_date":"2014-12-11 11:30","hour_of_day":"10:24 PM|Saturday","article_type":"unlocked","content_type":"recipe"},"page_info":{"channel":"mitt kok","site_section":"mitt kok","page_type":"200","login_status":"non-registered","language":"sv","page_name":"mitt kok:recipe:saftiga cheeseburgare"}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://mittkok.expressen.se/wp-content/plugins/bwp-minify/min/?f=wp-includes/js/jquery/jquery.js,wp-includes/js/jquery/jquery-migrate.min.js,wp-content/plugins/mittkok_facebook/facebook.js,wp-content/plugins/mittkok_followme/mittkokfollowme.js,wp-content/plugins/mittkok_followme/tipped.js,wp-content/plugins/mittkok_notifications/toastr/toastr.js,wp-content/plugins/mittkok_save/save.js,wp-content/plugins/mittkok_omniture/js/advertisement.js,wp-content/plugins/mittkok_omniture/js/mittkok_omniture.js,wp-content/themes/mittkok2015/dist/scripts/cookie-8e989555af.js&amp;ver=1484425245"></script>
+<script type="text/javascript" src="./mitt_kok_hamburger_files/burt-tablet-73e8c1bfe1655450b49494ebbe748b76.js.download"></script>
+<script type="text/javascript" src="./mitt_kok_hamburger_files/fusion2-fdd8f5e2686443e1e376e3d2dd5da109.js.download"></script>
+<script type="text/javascript" src="./mitt_kok_hamburger_files/analytics-post-a4f46a6914a5205a220dd7ca36eaa1e2.js.download"></script>
+<script type="text/javascript" src="./mitt_kok_hamburger_files/sifo_msr.js.download"></script>
+<link rel="https://api.w.org/" href="http://mittkok.expressen.se/wp-json/">
+<link rel="prev" title="Donals saffransfiskgryta" href="http://mittkok.expressen.se/recept/donals-saffransfiskgryta/">
+<link rel="next" title="Parma- och salviainlindad fläskfilé med potatisgratäng" href="http://mittkok.expressen.se/recept/parma-och-salviainlindad-flaskfile-med-potatisgratang/">
+<link rel="shortlink" href="http://mittkok.expressen.se/?p=70853">
+<link rel="alternate" type="application/json+oembed" href="http://mittkok.expressen.se/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmittkok.expressen.se%2Frecept%2Fsaftiga-cheeseburgare%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://mittkok.expressen.se/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fmittkok.expressen.se%2Frecept%2Fsaftiga-cheeseburgare%2F&amp;format=xml">
+	<script type="text/javascript">
+		var trackingInfo = {"contentId":70853,"contentType":"recipe","domain":"mittkok.expressen.se","isPremium":false,"gaTrackingId":"UA-86376213-1","publishDate":"2014-12-11","publishDateDatepartSweden":"2014-12-11","publishDateTimepartSweden":"11:30","sections":["mitt kok"],"title":"Saftiga cheeseburgare","tags":[],"topics":[],"pageName":"mitt kok:recipe:saftiga cheeseburgare"};
+		var settings = {
+		  burtTracking: false,
+		  gaTracking: true,
+		  jtpTracking: false,
+		  mtpTracking: false,
+		  sifoTracking: false,
+		  debug: false
+		};
+		//var gaTrackingId = trackingInfo.gaTracking[MittKok.device];
+		//trackingInfo.push(gaTrackingId);
+
+		window.ExpressenAnalytics.push(function (analytics) {
+		  analytics.init(trackingInfo, settings);
+		  analytics.track.pageView({});
+		});
+	</script>
+	<script async="" src="./mitt_kok_hamburger_files/hotjar-140317.js.download"></script><script src="./mitt_kok_hamburger_files/satellite-584eb55c64746d675c00c863.js.download"></script><script src="./mitt_kok_hamburger_files/satellite-564c2d1464746d7cb200026e.js.download"></script><script src="./mitt_kok_hamburger_files/s-code-contents-68db4cd84f542b22e38dcc2585f5ea3a088cbf88.js.download"></script><script src="./mitt_kok_hamburger_files/modules-ff7d3b106250c90da6a950a49a62f342.js.download"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style>#AD-rich_media2-wrapper{display: block;} #AD-rich_media2{display: block;} .bonniernews_rich_media2-0-fusion-ad-ifr-298940378rich_media1{height:280px !important;width:1240px !important; display: block; left: 50%; margin-left: -615px;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head><body class="single single-recept postid-70853 exp-ad-t15">
+<img style="position: absolute; bottom: 0; left: 0;" src="./mitt_kok_hamburger_files/page-view.gif">		<div id="fb-root" class=" fb_reset"><script async="" src="./mitt_kok_hamburger_files/all.js.download"></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./mitt_kok_hamburger_files/D6ZfFsLEB4F.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./mitt_kok_hamburger_files/D6ZfFsLEB4F(1).html" style="border: none;"></iframe></div></div></div>
+		<script type="text/javascript" async="true">
+			jQuery(document).ready(function() {
+				// Facebook init.
+				window.fbAsyncInit = function() {
+					FB.init({ appId: '413421265403584',
+						status: true,
+						cookie: true,
+						xfbml: true,
+						oauth: true});
+				};
+
+			});
+
+			jQuery(window).load(function() {
+				var e = document.createElement('script'); e.async = true;
+				e.src = document.location.protocol
+					+ '//connect.facebook.net/sv_SE/all.js';
+				document.getElementById('fb-root').appendChild(e);
+			});
+		</script>
+
+    <div class="b-ad__wrapper b-ad__wrapper--rich_media1" style="display: block;"><span class="b-ad__caption">Annons:</span><div id="rich_media1" data-fusion-space="rich_media1" class="b-ad__inner-wrapper" data-fusion-ad-id="298940378" data-fusion-ad-group="298940379" data-fusion-ad-server="fusion.expressen.se" data-fusion-media-zone="bns.tablet.exp.mitt_kok.0.0.artikel" data-fusion-layout="exp_mittkok_stor_recept"><iframe id="rich_media1-:-0-:-fusion-ad-ifr" name="rich_media1-:-0-:-fusion-ad-ifr" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" tabindex="-1" class="fusion-ad-iframe bonniernews_rich_media2-0-fusion-ad-ifr-298940378rich_media1" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="display: none; position: fixed; z-index: 50000; bottom: 0px;" src="./mitt_kok_hamburger_files/saved_resource.html"></iframe></div></div>    <div class="b-ad__wrapper b-ad__wrapper--rich_media2" style="display: block;"><span class="b-ad__caption">Annons:</span><div id="rich_media2" data-fusion-space="rich_media2" class="b-ad__inner-wrapper" data-fusion-ad-id="298940378" data-fusion-ad-group="298940379" data-fusion-ad-server="fusion.expressen.se" data-fusion-media-zone="bns.tablet.exp.mitt_kok.0.0.artikel" data-fusion-layout="exp_mittkok_stor_recept"><iframe id="rich_media2-:-0-:-fusion-ad-ifr" name="rich_media2-:-0-:-fusion-ad-ifr" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" tabindex="-1" class="fusion-ad-iframe" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="display: inline-block;" src="./mitt_kok_hamburger_files/saved_resource(2).html"></iframe></div></div>    <div class="b-ad__wrapper b-ad__wrapper--mob_rich_media1" style="display: none;"><span class="b-ad__caption">Annons:</span><div id="mob_rich_media1" data-fusion-space="mob_rich_media1" class="b-ad__inner-wrapper"></div></div>    <div class="b-ad__wrapper b-ad__wrapper--mob_rich_media2" style="display: none;"><span class="b-ad__caption">Annons:</span><div id="mob_rich_media2" data-fusion-space="mob_rich_media2" class="b-ad__inner-wrapper"></div></div>
+    <nav id="navbar-offcanvas-wrapper" class="navbar navbar-default visible-xs visible-sm" style="left: 0px;">
+    <div id="#navbar-offcanvas" class="navbar-offcanvas"><ul id="menu-huvudmeny" class="nav navbar-nav"><li id="menu-item-222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222"><a href="http://mittkok.expressen.se/">Hem</a></li>
+<li id="menu-item-120020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120020"><a title="Baka" href="http://mittkok.expressen.se/tema/baka">Baka</a></li>
+<li id="menu-item-120410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120410"><a href="http://mittkok.expressen.se/vin/">Vin</a></li>
+<li id="menu-item-23706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23706"><a href="http://mittkok.expressen.se/recept-och-tips/">Recept</a></li>
+<li id="menu-item-117038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117038"><a href="http://mittkok.expressen.se/tv/">TV</a></li>
+<li id="menu-item-48065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48065"><a href="http://mittkok.expressen.se/registrera/">Bli medlem</a></li>
+<li id="menu-item-48059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48059"><a href="http://mittkok.expressen.se/medlemmar-mittkok-se/">Medlemmar</a></li>
+<li id="menu-item-104530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104530"><a href="http://mittkok.expressen.se/tester/">Tester</a></li>
+<li id="menu-item-121623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121623"><a href="http://mittkok.expressen.se/semla/">Semlor</a></li>
+<li id="menu-item-118462" class="add-recipe menu-item menu-item-type-post_type menu-item-object-page menu-item-118462"><a href="http://mittkok.expressen.se/skapa-recept/">Skapa recept</a></li>
+</ul></div></nav>
+    <div id="site" class="site">
+    <!--[if IE]>
+    <div class="alert alert-warning">
+    Du använder en gammal webbläsare som vi inte stödjer längre. Besök <a href="//browsehappy.com/">browehappy</a> för att uppdatera din webbläsare.    </div>
+    <![endif]-->
+    <header class="header lp_header">
+
+    <div class="container">
+
+        <div class="back-to-expressen">
+            <img src="./mitt_kok_hamburger_files/icon_back.png" alt="" class="icon">
+            <a href="http://www.expressen.se/">
+                <img class="exp_logo_svg" src="./mitt_kok_hamburger_files/expressen-logo-grey.svg" alt="Expressen">
+            </a>
+        </div>
+
+        <button type="button" class="header__toggle navbar-toggle offcanvas-toggle" id="navbar-offcanvas-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+
+        <div class="header__logo">
+            <a href="http://mittkok.expressen.se/"><img class="logotype" alt="Mitt kök" src="./mitt_kok_hamburger_files/logo.svg"></a>
+        </div>
+
+
+        <div class="header__icons">
+                            <button class="js--header-search"><span class="fa fa-search" aria-hidden="true"></span></button>
+            
+                            <a href="http://mittkok.expressen.se/secure-login/?returnto=%2Frecept%2Fsaftiga-cheeseburgare%2F"><span class="fa fa-user" aria-hidden="true"></span></a>
+                    </div>
+
+        <div class="header__search">
+            <div>
+                <form method="get" action="http://mittkok.expressen.se/sok/">
+                    <i class="fa fa-search"></i>
+                    <input name="q" type="search" class="form-control" placeholder="Sök recept...">
+                </form>
+            </div>
+        </div>
+
+        <div class="header__login">
+                            <a href="http://mittkok.expressen.se/secure-login/?returnto=%2Frecept%2Fsaftiga-cheeseburgare%2F">
+                    <i class="fa fa-user"></i>
+                    <div class="content"><span>Logga in</span><br>eller skapa ett konto gratis</div>
+                </a>
+                    </div>
+
+        <nav class="navbar navbar-default hidden-xs hidden-sm">
+    <div class="menu-huvudmeny-container"><ul id="menu-huvudmeny-1" class="nav navbar-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-222"><a href="http://mittkok.expressen.se/">Hem</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-120020"><a title="Baka" href="http://mittkok.expressen.se/tema/baka">Baka</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120410"><a href="http://mittkok.expressen.se/vin/">Vin</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23706"><a href="http://mittkok.expressen.se/recept-och-tips/">Recept</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-117038"><a href="http://mittkok.expressen.se/tv/">TV</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48065"><a href="http://mittkok.expressen.se/registrera/">Bli medlem</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48059"><a href="http://mittkok.expressen.se/medlemmar-mittkok-se/">Medlemmar</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104530"><a href="http://mittkok.expressen.se/tester/">Tester</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121623"><a href="http://mittkok.expressen.se/semla/">Semlor</a></li>
+<li class="add-recipe menu-item menu-item-type-post_type menu-item-object-page menu-item-118462"><a href="http://mittkok.expressen.se/skapa-recept/">Skapa recept</a></li>
+</ul></div></nav>
+    </div>
+    <!-- /.container -->
+
+</header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="b-ad__wrapper b-ad__wrapper--panorama1" style="display: block;"><span class="b-ad__caption">Annons:</span><div id="panorama1" data-fusion-space="panorama1" class="b-ad__inner-wrapper" data-fusion-ad-id="319750596" data-fusion-ad-group="319750597" data-fusion-ad-server="fusion.expressen.se" data-fusion-media-zone="bns.tablet.exp.mitt_kok.0.0.artikel" data-fusion-layout="exp_mittkok_stor_recept"><iframe id="panorama1-:-0-:-fusion-ad-ifr" name="panorama1-:-0-:-fusion-ad-ifr" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" tabindex="-1" class="fusion-ad-iframe" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="display: inline-block;" src="./mitt_kok_hamburger_files/saved_resource(3).html"></iframe></div></div>                <div class="b-ad__wrapper b-ad__wrapper--mob_1" style="display: none;"><span class="b-ad__caption">Annons:</span><div id="mob_1" data-fusion-space="mob_1" class="b-ad__inner-wrapper"></div></div>            </div>
+        </div>
+
+        <div class="row">
+            <main class="main col-md-9">
+
+                
+<div class="recipe" itemscope="" itemtype="http://schema.org/Recipe">
+    
+    <div class="recipe__top">
+
+        <div class="recipe__top--left">
+            <h1 class="recipe__title" itemprop="name">Saftiga cheeseburgare</h1>
+        </div>
+
+        <div class="recipe__top--right">
+                            <div class="recipe__rate">
+                    <div class="rate" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+
+            <div class="rate__meta">
+            <meta itemprop="ratingCount" content="0">
+            <meta itemprop="ratingValue" content="0">
+            <span class="rate__print">Betyg: 0/5</span>
+            <span class="rate__label">Sätt ditt betyg</span>
+            <span class="rate__hover"></span>
+        </div>
+    
+    <span class="rating ">
+                    <span class="star  js--recipe-set-rate" data-rate="5" data-recipe="70853"></span>
+                    <span class="star  js--recipe-set-rate" data-rate="4" data-recipe="70853"></span>
+                    <span class="star  js--recipe-set-rate" data-rate="3" data-recipe="70853"></span>
+                    <span class="star  js--recipe-set-rate" data-rate="2" data-recipe="70853"></span>
+                    <span class="star  js--recipe-set-rate" data-rate="1" data-recipe="70853"></span>
+            </span>
+
+</div>
+                </div>
+                    </div>
+
+    </div>
+
+    <div class="recipe__card">
+        <div class="recipe__card--left">
+
+            <div class="recipe__handlers">
+                                    <button class="js--show-save-recipe button " data-recipe-id="70853">
+    <i class="icon fa fa-heart-o"></i> <span class="text">Spara recept</span>
+</button>
+                                            </div>
+
+                            <div class="recipe__image">
+                    <img src="./mitt_kok_hamburger_files/ead61aa3-7b80-466e-8183-d86ee18190538-700x700.jpg" itemprop="image" alt="Saftiga cheeseburgare">
+
+                    
+                </div>
+            
+        </div>
+        <div class="recipe__card--right">
+
+            <div class="author">
+    <div class="author__avatar">
+        <a href="http://mittkok.expressen.se/profil/?user_id=17" title="Tommy Myllymäki">
+                            <img src="./mitt_kok_hamburger_files/17-large-1400573217.png" alt="Tommy Myllymäki">
+            
+        </a>
+    </div>
+    <div class="author__name" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <a href="http://mittkok.expressen.se/profil/?user_id=17"><span itemprop="name">Tommy Myllymäki</span></a>
+        <div class="author__details">
+            <span class="author__details__item">Recept: <a href="http://mittkok.expressen.se/profil/?user_id=17">278</a></span>
+            <span class="author__details__item">Följare: <a href="http://mittkok.expressen.se/profil/?user_id=17#user_stats_foljs">1172</a></span>
+        </div>
+    </div>
+    
+        <button class="js--follow-author author__follow" data-user-id="17" data-text="Följer">
+                Följ        </button>
+
+    </div>
+
+                            <div class="recipe__related">
+                    <h3>Detta är också <span>gott</span></h3>
+
+                    <div class="swiper">
+
+                        <div class="swiper-pagination swiper-pagination-1 swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+
+                        <div class="swiper-container instance-1 swiper-container-horizontal" data-index="1">
+                            <div class="swiper-wrapper" style="transform: translate3d(-1065px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/cheeseburgare/" title="Cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/0adf11e7-0290-48e8-9eff-d2a1e3896cbc-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare-2/" title="Amerikansk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/2064d995-7358-41f6-ba25-895083381268-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                                                            </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare/" title="Amerikansk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/default_recipe_2.png" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/toms-cheeseburgare/" title="Toms cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/217_cheeseburgare_3-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Toms cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+                                    
+                                
+                                                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/klassisk-cheeseburgare-2/" title="Klassisk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/17d4a181-9cd9-4328-b04a-c83cfe74e3d22-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Klassisk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/lussekatter/" title="Saftiga lussebullar" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/DSC_0019-305x305-1.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga lussebullar</span>
+            <span class="tile-item__content__author">Jennifer Lindberg</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+                                                                    </div>
+                                
+                                                                                                                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/cheeseburgare/" title="Cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/0adf11e7-0290-48e8-9eff-d2a1e3896cbc-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare-2/" title="Amerikansk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/2064d995-7358-41f6-ba25-895083381268-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                                                            </div>                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare/" title="Amerikansk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/default_recipe_2.png" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/toms-cheeseburgare/" title="Toms cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/217_cheeseburgare_3-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Toms cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+                                    
+                                
+                                                                            </div>                                        <div class="swiper-slide" data-swiper-slide-index="2" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/klassisk-cheeseburgare-2/" title="Klassisk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/17d4a181-9cd9-4328-b04a-c83cfe74e3d22-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Klassisk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/lussekatter/" title="Saftiga lussebullar" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/DSC_0019-305x305-1.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga lussebullar</span>
+            <span class="tile-item__content__author">Jennifer Lindberg</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+                                                                    </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/cheeseburgare/" title="Cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/0adf11e7-0290-48e8-9eff-d2a1e3896cbc-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare-2/" title="Amerikansk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/2064d995-7358-41f6-ba25-895083381268-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                                                            </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare/" title="Amerikansk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/default_recipe_2.png" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/toms-cheeseburgare/" title="Toms cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/217_cheeseburgare_3-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Toms cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+                                    
+                                
+                                                                            </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="margin-right: 10px;">
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/klassisk-cheeseburgare-2/" title="Klassisk cheeseburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/17d4a181-9cd9-4328-b04a-c83cfe74e3d22-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Klassisk cheeseburgare</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+                                    
+                                
+                                    
+                                    
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/lussekatter/" title="Saftiga lussebullar" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/DSC_0019-305x305-1.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga lussebullar</span>
+            <span class="tile-item__content__author">Jennifer Lindberg</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+                                                                    </div></div>
+                            <!-- /.swiper-wrapper -->
+                            <div class="swiper-button-prev btn-prev-1"></div>
+                            <div class="swiper-button-next btn-next-1"></div>
+                        </div><!-- /.swiper-container -->
+                    </div><!-- /.swiper -->
+                </div><!-- /.related -->
+            
+        </div>
+    </div>
+
+    <div class="row recipe__content">
+        <div class="col-sm-12">
+                            <div class="recipe__description" itemprop="description">
+                    <p>Myllymäkis saftiga cheeseburgare kan man inte få nog av!</p>
+                </div>
+                                        <div class="recipe__tags">
+                                            <a href="http://mittkok.expressen.se/typ/middag/" title="middag" class="">middag</a>
+                                            <a href="http://mittkok.expressen.se/tema/fest/" title="fest" class="">fest</a>
+                                            <a href="http://mittkok.expressen.se/huvudingrediens/kottfars/" title="köttfärs" class="">köttfärs</a>
+                                                        </div>
+                    </div>
+
+        <div class="col-sm-4 recipe__ingredients">
+            <div class="recipe__ingredients--inner">
+                <h2>Ingredienser</h2>
+                                    <div class="recipe__portions" itemprop="recipeYield">
+                        4  burgare                    </div>
+                                        
+        <ul>
+        
+            <li><span itemprop="recipeIngredient">            
+            Cheeseburgare:</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">600            g
+            nötfärs av högrev</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">            
+            salt och svartpeppar</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">80            g
+            cheddar ost eller gruyère att hyvla</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">2            
+            gula lökar</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">2            
+            saltgurka</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">            
+            smör till stekning</span></li>
+
+        
+        </ul>
+                    	<h3>Majonnäs</h3>
+        
+        <ul>
+        
+            <li><span itemprop="recipeIngredient">1            
+            äggula</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">2            tsk
+            senap</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">3            dl
+            matolja (neutralolja)</span></li>
+
+        
+            <li><span itemprop="recipeIngredient">1            msk
+            vitvinsvinäger</span></li>
+
+        
+        </ul>
+                </div>
+        </div>
+        <div class="col-sm-8 recipe__instructions" itemprop="recipeInstructions">
+            <div class="recipe__instructions--inner">
+                <h2>Så här gör du</h2>
+                                                	<ol>
+					<li><span>Börja med majonnäsen, blanda ner äggulan, senapen och vinägern i en bunke. Tillsätt matoljan i en tunn stråle medan du vispar hela tiden. Använd elvisp eller handvisp. När majonnäsen är tjock och du ser dragen/spåren av vispen i majonnäsen är den klar.</span></li>
+					<li><span>Skiva löken tunt och stek den mjuk i en stekpanna med lite smör på låg värme tills den är mjuk och fått lite färg. Förbered osten genom att skära tunna skivor och skär sedan långa tunna skivor av gurkan.</span></li>
+					<li><span>Ta av löken från pannan och låt vila på en tallrik. Skär bröden och gör rent stekpannan, i den skall bröden stekas.</span></li>
+					<li><span>Dela färsen i lika stora bitar och forma fyra hamburgare, pressa ihop färsen utan att arbeta med den för mycket.</span></li>
+					<li><span>Stek bröden i en torr panna så de får lite stekyta, köttet släpper fett som burgarna steks i.</span></li>
+					<li><span>Platta till burgarna och stek på hög värme i en panna utan fett. Tryck till burgarna medan dem steks för dem har en förmåga att dra ihop sig och resa sig. Stek ca 2 minuter per sida, ge burgarna ordentligt med stekyta. När det börjar bli färdiga, lägg på osten på varje burgare.</span></li>
+					<li><span>Lägg hamburgarna på brödet, låt köttsaften rinna ner i brödet och ge smak. Toppa med stekt lök och gurka. Kicka och bred på majonnäsen på toppen och lägg ihop burgarna.</span></li>
+					<li><span>Servera och ät på direkten!</span></li>
+			</ol>
+	
+                <div class="recipe__meta">
+                    <div class="meta meta-recept">
+
+	
+            <button class="js--show-save-recipe button meta-button meta-save" data-recipe-id="70853">
+    <i class="icon fa fa-heart-o"></i> <span class="text">Spara recept</span>
+</button>
+    
+	<button class="meta-button meta-comments visible-xs-inline js--toggle-comments">
+		<i class="fa fa-comments icon"></i>
+		Kommentera	</button>
+
+	<a class="meta-share share-print" href="http://mittkok.expressen.se/recept/saftiga-cheeseburgare/#" onclick="window.print()" data-id="70853"><i class="fa fa-print"></i> Skriv ut <span></span></a>
+	<a class="meta-share share-facebook" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmittkok.expressen.se%2Frecept%2Fsaftiga-cheeseburgare%2F"><i class="fa fa-facebook"></i> Dela <span></span></a>
+	<a class="meta-share share-pinterest" href="javascript:void((function()%7Bvar%20e=document.createElement(&#39;script&#39;);e.setAttribute(&#39;type&#39;,&#39;text/javascript&#39;);e.setAttribute(&#39;charset&#39;,&#39;UTF-8&#39;);e.setAttribute(&#39;src&#39;,&#39;http://assets.pinterest.com/js/pinmarklet.js?r=&#39;+Math.random()*99999999);document.body.appendChild(e)%7D)());"><i class="fa fa-pinterest-p"></i> Pinna <span></span></a>
+
+	<div class="meta-share share-count -show">
+		<span id="share-count">128</span>
+	</div>
+
+	<script type="text/javascript">
+		(function($) {
+			var placeHolder = document.getElementById('share-count');
+
+			function getPinterestShareCount(url) {
+				var pinUrl = 'http://api.pinterest.com/v1/urls/count.json?callback=?';
+				$.getJSON(pinUrl, { url: url }).done(function (res) {
+				    if(!res.count) return;
+					updateShareCount(res.count);
+				});
+			}
+
+			function updateShareCount(count) {
+				var currentCount = parseInt(placeHolder.innerText);
+				var newCount = currentCount + count;
+				if (0 < newCount) {
+					placeHolder.innerText = newCount;
+					$('.share-count').addClass('-show');
+				}
+			}
+
+			function shareFacebook(e) {
+				e.preventDefault();
+
+				window.open($(this).attr('href'), 'Dela', 'height=500,width=700');
+			}
+
+			function incrementShareCount(e) {
+				e.preventDefault();
+				var postId = $(this).data('id');
+
+				if (!postId) return;
+
+				var request = $.ajax({
+					method: 'POST',
+					url: AJAX_URL,
+					data: {
+						action: 'increment_share_count',
+						post_id: postId
+					}
+				});
+
+				request.then(function (res) {
+					if (!res.success) return;
+					updateShareCount(res.data);
+				});
+
+				return false;
+			}
+
+			$(document).ready(function() {
+				$('.share-print').on('click', incrementShareCount);
+				$('.share-facebook').on('click', shareFacebook);
+				getPinterestShareCount("http://mittkok.expressen.se/recept/saftiga-cheeseburgare/");
+			});
+
+		})(jQuery);
+	</script>
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="recipe__banner">
+        <div class="b-ad__wrapper b-ad__wrapper--mob_2" style="display: none;"><span class="b-ad__caption">Annons:</span><div id="mob_2" data-fusion-space="mob_2" class="b-ad__inner-wrapper"></div></div>        <div class="b-ad__wrapper b-ad__wrapper--articlemodule1" style="display: block;"><span class="b-ad__caption">Annons:</span><div id="articlemodule1" data-fusion-space="articlemodule1" class="b-ad__inner-wrapper" data-fusion-ad-id="319750554" data-fusion-ad-group="319750555" data-fusion-ad-server="fusion.expressen.se" data-fusion-media-zone="bns.tablet.exp.mitt_kok.0.0.artikel" data-fusion-layout="exp_mittkok_stor_recept"><iframe id="articlemodule1-:-0-:-fusion-ad-ifr" name="articlemodule1-:-0-:-fusion-ad-ifr" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" tabindex="-1" class="fusion-ad-iframe" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="display: inline-block;" src="./mitt_kok_hamburger_files/saved_resource(4).html"></iframe></div></div>    </div>
+
+    
+    <div class="recipe__comments">
+        
+<div id="comments-start"></div>
+<div class="comments ">
+
+
+
+
+	<div class="reply">
+
+			<div class="reply__avatar">
+				<img src="./mitt_kok_hamburger_files/default_user.jpg" alt="">
+			</div>
+
+			<div class="reply__form--wrap">
+				<div class="reply__form">
+					<form action="http://mittkok.expressen.se/wp-comments-post.php" method="post" id="commentform">
+						<div class="comments__reply">
+							<textarea name="comment" id="comment" class="comments__reply__form" tabindex="4" placeholder="Skriv gärna vad du tycker"></textarea>
+					        <div class="comments__reply__errors"></div>
+
+															<input class="comments__reply__submit" name="submit" type="submit" id="submit" tabindex="5" value="Kommentera">
+					    	
+					        <input type="hidden" name="comment_post_ID" value="70853" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+
+						    						</div>
+
+					</form>
+				</div>
+			</div>
+
+
+	</div>
+
+</div>
+    </div>
+
+    
+</div>
+
+<section class="below-content -wide">
+    <div class="module">
+        <div class="module__title">Du kanske även gillar</div>
+        <div class="listing">
+            
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/cheeseburgare-med-gruyereost/" title="Cheeseburgare med  gruyèreost" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/bild4-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Cheeseburgare med  gruyèreost</span>
+            <span class="tile-item__content__author">Jenny</span>
+                                </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare-med-coleslaw/" title="Amerikansk cheeseburgare med coleslaw" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/d1e0e087-50e6-429c-9200-3a133899b8ce-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare med coleslaw</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/saftiga-kanelbullar-2/" title="Saftiga Kanelbullar" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/DSC_0974-305x305-1.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga Kanelbullar</span>
+            <span class="tile-item__content__author">Livet genom smaklökarna</span>
+                                        <span class="tile-item__content__meta -rate">3/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/saftiga-kanelbullar/" title="Saftiga kanelbullar" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/image46-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga kanelbullar</span>
+            <span class="tile-item__content__author">Maria</span>
+                                        <span class="tile-item__content__meta -rate">5/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/saftiga-chokladmuffins/" title="Saftiga chokladmuffins – recept" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/DSC_0028-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga chokladmuffins – recept</span>
+            <span class="tile-item__content__author">Jennifer Lindberg</span>
+                            <span class="tile-item__content__meta -time">30 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/amerikansk-cheeseburgare-med-klassiska-tillbehor/" title="Amerikansk cheeseburgare med klassiska tillbehör " class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/2e5ea983-1310-4633-992d-d26b622d7df2-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Amerikansk cheeseburgare med klassiska tillbehör </span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/saftiga-rodbets-chevre-hamburgare/" title="Saftiga rödbets &amp; chèvre hamburgare" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/image41-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga rödbets &amp; chèvre hamburgare</span>
+            <span class="tile-item__content__author">Jenny</span>
+                                </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/semlor-saftiga/" title="Semlor – saftiga och goda" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/semlor-saftiga-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Semlor – saftiga och goda</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                            <span class="tile-item__content__meta -time">1 tim</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/saftiga-jalapenoburgare-med-nachos/" title="Saftiga jalapeñoburgare med nachos" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/e0f9d58c-a129-4b55-b3eb-93c1da5a272d-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga jalapeñoburgare med nachos</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/saftiga-paronmuffins-med-granola/" title="Saftiga päronmuffins med granola" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/l-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Saftiga päronmuffins med granola</span>
+            <span class="tile-item__content__author">Jenny</span>
+                                </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/rokig-cheeseburgare-med-klyftpotatis-och-grillad-majskolv/" title="Rökig cheeseburgare med klyftpotatis och grillad majskolv" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/Rökig-cheeseburgare-med-klyftpotatis-och-majskolv-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Rökig cheeseburgare med klyftpotatis och grillad majskolv</span>
+            <span class="tile-item__content__author">Tina Gustafsson</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/basta-saftiga-och-knapriga-kottbullarna/" title="Bästa saftiga och knapriga köttbullarna" class="tile-item__link">
+        <div class="tile-item__image">
+                        <img src="./mitt_kok_hamburger_files/image2-305x305-1.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Bästa saftiga och knapriga köttbullarna</span>
+            <span class="tile-item__content__author">Albin Daleby</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+        </div>
+    </div>
+
+    <div class="module">
+        <div class="module__title">Populära recept</div>
+        <div class="listing">
+            
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/flaskfilewok/" title="Fläskfiléwok" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/expressen-flskfil-1510160021-tif-cnv-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Fläskfiléwok</span>
+            <span class="tile-item__content__author">Lena Söderström</span>
+                            <span class="tile-item__content__meta -time">40 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/baconstekt-flaskfile/" title="Baconstekt fläskfilé" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/expressen-flskfil-1510160033-tif-cnv-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Baconstekt fläskfilé</span>
+            <span class="tile-item__content__author">Lena Söderström</span>
+                            <span class="tile-item__content__meta -time">50 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/julmustkola-enkelt-recept/" title="Julmustkola – enkelt recept" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/julmustrecept-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Julmustkola – enkelt recept</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                            <span class="tile-item__content__meta -time">45 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/fudge-klassiskt-recept/" title="Fudge – klassiskt recept" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/fudge-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Fudge – klassiskt recept</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                            <span class="tile-item__content__meta -time">20 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/vasterbottenpaj-enkelt-snabbt-recept/" title="Västerbottenpaj – enkelt och snabbt recept" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/DSC_0150-1-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Västerbottenpaj – enkelt och snabbt recept</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                            <span class="tile-item__content__meta -time">15 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/kycklinggryta-med-curry/" title="Kycklinggryta med curry" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/2835f2fd-700d-4eb5-b224-7041c5463c2c-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Kycklinggryta med curry</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/apelsinsmoothie-med-kanel-ingefara/" title="Apelsinsmoothie med kanel och ingefära" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/bild-3-13-305x305-1.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Apelsinsmoothie med kanel och ingefära</span>
+            <span class="tile-item__content__author">Lovisa Berg</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/vinnande-rodvinssas/" title="Rödvinssås" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/HELSTEKT-DOVHJORTFILE-MES-RÖDVINSSAAS-OCH-ROTSAKSGRATÄNG-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Rödvinssås</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                            <span class="tile-item__content__meta -time">30 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/smoothie-med-kiwi-avokado/" title="Smoothie med kiwi och avokado" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/4557_111-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Smoothie med kiwi och avokado</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">5/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/gronkalspaj-med-valnotter/" title="Grönkålspaj med valnötter" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/af5fbc47-03ee-47f9-8937-748bf6ef2e65-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Grönkålspaj med valnötter</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/gubbrora/" title="Klassisk gubbröra – vårt bästa recept" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/0440373c-bcd7-48e4-bb1b-2da375823921-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Klassisk gubbröra – vårt bästa recept</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                            <span class="tile-item__content__meta -time">20 min</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+
+<div class="tile-item tile-item--recipe">
+    <a href="http://mittkok.expressen.se/recept/citroncheesecake-med-ingefarsbotten/" title="Cheesecake med citron på ingefärsbotten" class="tile-item__link">
+        <div class="tile-item__image">
+                            <span class="popular"><i class="fa fa-bolt"></i> Populär</span>
+                        <img src="./mitt_kok_hamburger_files/1b706397-1eee-405e-9997-16ec8ff57f632-305x305.jpg" alt="">
+        </div>
+        <div class="tile-item__content">
+            <span class="tile-item__content__title">Cheesecake med citron på ingefärsbotten</span>
+            <span class="tile-item__content__author">Mitt Kök</span>
+                                        <span class="tile-item__content__meta -rate">4/5</span>
+                    </div>
+    </a>
+</div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <!-- /.main -->
+
+            <aside class="sidebar col-md-3">
+
+                <div class="sidebar__ads">
+	<div class="b-ad__wrapper b-ad__wrapper--outsider1" style="display: block;"><span class="b-ad__caption">Annons:</span><div id="outsider1" data-fusion-space="outsider1" class="b-ad__inner-wrapper" data-fusion-ad-id="319750400" data-fusion-ad-group="319750401" data-fusion-ad-server="fusion.expressen.se" data-fusion-media-zone="bns.tablet.exp.mitt_kok.0.0.artikel" data-fusion-layout="exp_mittkok_stor_recept"><iframe id="outsider1-:-0-:-fusion-ad-ifr" name="outsider1-:-0-:-fusion-ad-ifr" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" tabindex="-1" class="fusion-ad-iframe" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="display: inline-block;" src="./mitt_kok_hamburger_files/saved_resource(5).html"></iframe></div></div>	<div class="b-ad__wrapper b-ad__wrapper--outsider2" style="display: block;"><span class="b-ad__caption">Annons:</span><div id="outsider2" data-fusion-space="outsider2" class="b-ad__inner-wrapper" data-fusion-ad-id="319449837" data-fusion-ad-group="319449838" data-fusion-ad-server="fusion.expressen.se" data-fusion-media-zone="bns.tablet.exp.mitt_kok.0.0.artikel" data-fusion-layout="exp_mittkok_stor_recept"><iframe id="outsider2-:-0-:-fusion-ad-ifr" name="outsider2-:-0-:-fusion-ad-ifr" width="0" height="0" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" tabindex="-1" class="fusion-ad-iframe" src="javascript:&quot;&lt;html&gt;&lt;body style=&#39;background:transparent&#39;&gt;&lt;/body&gt;&lt;/html&gt;&quot;" style="display: inline-block;" src="./mitt_kok_hamburger_files/saved_resource(6).html"></iframe></div></div></div>
+
+            </aside>
+            <!-- /.sidebar -->
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Start Bootstrap Modals -->
+    <div id="modal-save-recipe" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog ">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <div class="modal-content">
+            	        	<div class="modal-loading"></div>
+	                </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- / End Bootstrap Modals -->
+
+    <footer class="footer">
+
+    <div class="footer__upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                                            <div class="footer__logotype">
+                            <img src="./mitt_kok_hamburger_files/logo.svg" alt="">
+                        </div>
+                                    </div>
+                <div class="col-sm-8">
+                    <div class="footer__search">
+                        <form method="get" action="http://mittkok.expressen.se/sok/">
+                            <i class="fa fa-search"></i>
+                            <input name="q" type="search" class="form-control" placeholder="Sök recept...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__main footer__main--top">
+        <div class="container">
+            <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                        <div class="widget__title">Senaste blogginlägg</div>
+                        <div class="widget__content">
+                            <ul>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/cider-testa-de-har/">Cider – testa de här!</a></li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/nya-ol-den-1-september/">Nya öl den 1 september</a></li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/hej-da-och-tack-for-olen/">Hej då och tack för ölen!</a></li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/nyheter-om-ol-2016-80/">Nyheter om öl – 2016 – 80</a></li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/bra-ol-under-20-kronor/">Bra öl under 20 kronor</a></li>
+	<!-- post navigation -->
+</ul>                        </div>
+                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                        <div class="widget__title">Populära recept</div>
+                        <div class="widget__content">
+                            <ul>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/recept/ingefarsshot-recept/">
+		<img src="./mitt_kok_hamburger_files/ingefrsshot-137x137-1.jpg" alt="">
+		<span>Ingefärsshot – recept</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/recept/africana-med-flaskfile/">
+		<img src="./mitt_kok_hamburger_files/a7919e6e-79ff-4dc3-bf6f-f5795622052d-137x137.jpg" alt="">
+		<span>Africana med fläskfilé </span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/recept/superenkel-flaskfilegratang/">
+		<img src="./mitt_kok_hamburger_files/bild-2-7-137x137-1.jpg" alt="">
+		<span>Superenkel fläskfilégratäng</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/recept/allt-i-ett-ugnsbakad-kyckling-med-potatis-och-paprika/">
+		<img src="./mitt_kok_hamburger_files/9b8a9ae7-cd50-4883-8b46-dbeb28484101-137x137.jpg" alt="">
+		<span>Allt-i-ett ugnsbakad  kyckling med potatis  och paprika</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/recept/pasta-med-flaskfile/">
+		<img src="./mitt_kok_hamburger_files/PASTA_BROMAN_8920-137x137.jpg" alt="">
+		<span>Pasta med fläskfilé och bacon</span></a>
+	</li>
+	<!-- post navigation -->
+</ul>                        </div>
+                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                        <div class="widget__title">Våra kockar</div>
+                        <div class="widget__content">
+                            <ul>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/profil/?user_id=25244">
+		<img src="./mitt_kok_hamburger_files/25244-large-1457013073.png" alt="Elisabeth Johansson" class="-circle">
+		<span>Elisabeth Johansson</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/profil/?user_id=31638">
+		<img src="./mitt_kok_hamburger_files/31638-large-1419345746.png" alt="Monika Ahlberg" class="-circle">
+		<span>Monika Ahlberg</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/profil/?user_id=20775">
+		<img src="./mitt_kok_hamburger_files/20775-large-1403872137.png" alt="Klara Desser" class="-circle">
+		<span>Klara Desser</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/profil/?user_id=489">
+		<img src="./mitt_kok_hamburger_files/489-large-1460637255.png" alt="Evelinas kök" class="-circle">
+		<span>Evelinas kök</span></a>
+	</li>
+	<!-- post -->
+	<li><a href="http://mittkok.expressen.se/profil/?user_id=170">
+		<img src="./mitt_kok_hamburger_files/picture" alt="Barbro Nässén" class="-circle">
+		<span>Barbro Nässén</span></a>
+	</li>
+</ul>                        </div>
+                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                        <div class="widget__title">Om Mitt kök</div>
+                        <div class="widget__content">
+                            <ul>
+	<li><a href="http://mittkok.expressen.se/kontakta-oss/">Kontakta oss</a></li>
+	<li><a href="http://mittkok.expressen.se/artikel/annonsera/">Annonsera</a></li>
+	<li><a href="http://mittkok.prenservice.se/">Prenumerera</a></li>
+	<li><a href="http://mittkok.expressen.se/artikel/anvandarvillkor/">Användarvillkor</a></li>
+	<li><a href="http://mittkok.expressen.se/artikel/cookies/">Vi använder kakor</a></li>
+</ul>                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+    <div class="footer__main footer__main--bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 column--create-account">
+                    <a href="http://mittkok.expressen.se/registrera/">Bli medlem idag</a>
+                </div>
+                <div class="col-md-3 col-sm-6 column--create-recipe">
+                    <a href="http://mittkok.expressen.se/skapa-recept/">Lägg till eget recept</a>
+                </div>
+                <div class="col-md-3 col-sm-6 column--newsletter">
+                    <a href="http://mittkok.prenservice.se/" target="_blank">Prenumerera på tidningen</a>
+                </div>
+                <div class="col-md-3 col-sm-6 column--social">
+                    <a href="http://www.facebook.com/mittkok"><img src="./mitt_kok_hamburger_files/Facebook-Icon.png" alt="Mitt kök på Facebook"></a>
+                    <a href="http://www.instagram.com/mittkok/"><img src="./mitt_kok_hamburger_files/Instagram-Icon.png" alt="Mitt kök på Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__publisher">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-2">
+                    <strong>Webbredaktör Mitt kök:</strong> <a href="mailto:jorunn.amcoff@expressen.se">Jorunn Amcoff</a><br>
+                    och <a href="mailto:stina.gustafsson@expressen.se">Stina Gustafsson</a><br>
+                    <strong>Redaktör Mitt kök (sajt):</strong> <a href="mailto:julia.wiberg@expressen.se">Julia Wiberg</a><br>
+                    <strong>Redaktör Mitt kök (magasin):</strong> <a href="mailto:erik.thorsell@expressen.se">Erik Thorsell</a><br>
+                    <strong>Chef Expressen Magasin:</strong> <a href="mailto:anna-clara.welander@expressen.se">Anna-Clara Welander</a><br>
+                    <strong>Ansvarig utgivare:</strong> <a href="mailto:thomas.mattsson@expressen.se">Thomas Mattson</a><br>
+                    <strong>Användarvillkor:</strong> <a href="http://mittkok.expressen.se/artikel/anvandarvillkor/">Villkor för matsajten Mitt kök</a><br>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <strong>Kontakt:</strong> Ring <a href="tel:08-738 30 00">08-738 30 00</a><br>
+                    <strong>Mejla:</strong> <a href="mailto:mittkok@expressen.se">mittkok@expressen.se</a><br>
+                    <strong>Posta:</strong> Mittkök, 105 10 Stockholm<br><br>
+                    <p><img src="./mitt_kok_hamburger_files/logo_mittkok.png" alt="Mitt Kök"> i samarbete med <img src="./mitt_kok_hamburger_files/logo_exp_small.png" alt="Expressen"><br>© AB Kvällstidningen Expressen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<div id="Panel_Content" style="display:none"><iframe src="./mitt_kok_hamburger_files/set_panel2.html"></iframe></div>
+	<!-- Sifo Tracking Desktop -->
+	<script type="text/javascript">
+	    //<!--
+	    function send_panel() {
+	        var OAS_server = 'https://ssl.sifomedia.se';
+
+	    	if( document.location.protocol === 'http:' ) {
+	    		OAS_server = '//sifomedia.expressen.se';
+	    	}
+
+	        if (!(OAS_rn)) {
+	            var OAS_rn = new String(Math.random());
+	            var OAS_rns = OAS_rn.substring(2, 11);
+	        }
+
+	        var OAS_taxonomy = '&Sajt=expressen&Sektion=mitt kok&Undersektion1=recept&Undersektion2=&Undersektion3=&Typ=panelonlywebb-desktop';
+	        var newIframe = document.createElement("iframe");
+	        newIframe.src = '//panel2.research-int.se/0/RI-Panel/pixel/set_panel2.html?' + OAS_rns + '__!__' + OAS_server + '__!__' + OAS_taxonomy;
+	        document.getElementById('Panel_Content').appendChild(newIframe);
+
+	        return true;
+	    }
+
+	    function ExecutePanelCall(checkAndSetPanelFunc) {
+	        checkAndSetPanelFunc();
+	    }
+
+	    ExecutePanelCall(function() {
+	        if (document.cookie.indexOf('member_type=') === -1) {
+	            send_panel();
+	        }
+	    });
+	//-->
+	</script>
+ 		<!-- Facebook Tracking -->
+	<script>
+	    (function() {
+	        var _fbq = window._fbq || (window._fbq = []);
+	        if (!_fbq.loaded) {
+	            var fbds = document.createElement('script');
+	            fbds.async = true;
+	            fbds.src = 'https://connect.facebook.net/sv_SE/fbds.js';
+	            var s = document.getElementsByTagName('script')[0];
+	            s.parentNode.insertBefore(fbds, s);
+	            _fbq.loaded = true;
+	        }
+	        window._fbq.push(['addPixelId', '810947455647573']);
+	        window._fbq.push(['track', 'ViewContent']);
+	    })();
+	    window._fbq = window._fbq || [];
+	    window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+	<noscript>&lt;img height="1" width="1" alt="" style="display:none" src="//www.facebook.com/tr?id=810947455647573&amp;amp;ev=PixelInitialized" /&gt;</noscript>
+	<script type="text/javascript" src="./mitt_kok_hamburger_files/saved_resource(1)"></script>
+<script type="text/javascript" src="./mitt_kok_hamburger_files/535a7c5fe45a1d4e46d8d7b5.js.download"></script>
+    </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a1e7052088","applicationID":"31303840","transactionName":"NVVVZ0pRCBIHB0VaDQwfdlBMWQkPSQZQQAc=","queueTime":0,"applicationTime":563,"atts":"GRJWEQJLGxw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 3022/3744 objects using memcache
+
+ Served from: env-5548291.jelastic.elastx.net @ 2017-01-14 23:24:57 by W3 Total Cache --><div class="responsive-bootstrap-toolkit"><div class="device-xs visible-xs visible-xs-block"></div><div class="device-sm visible-sm visible-sm-block"></div><div class="device-md visible-md visible-md-block"></div><div class="device-lg visible-lg visible-lg-block"></div></div><iframe name="_hjRemoteVarsFrame" title="Hotjar Remote Vars Frame" id="_hjRemoteVarsFrame" src="./mitt_kok_hamburger_files/rcj-9a8c65a25e627120fda741095c91ae72.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div id="ads"></div></body></html>
