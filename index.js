@@ -1,35 +1,56 @@
+const cheerio = require('cheerio');
+const request = require('request');
+const slugify = require('voca/slugify');
 const path = require('path');
-const read = require('fs').readFileSync;
-const html = read(path.resolve(__dirname, 'pages/mitt_kok_10_best_recepies.html'));
-const html2 = read(path.resolve(__dirname, 'pages/mitt_kok_hamburger.html'));
-const x = require('x-ray')({
-    filters: {
-        normalize: function(value) {
-            if (typeof value !== 'string') return value;
-            return value.trim().replace(/\s\s+/g, ' ').replace(/\n/gm,'')
-        }
+const fs = require('fs');
+
+function normalize(value) {
+    if (typeof value !== 'string') return value;
+    return value.trim().replace(/\s\s+/g, ' ').replace(/\n/gm, '')
+}
+
+const top10Url = 'http://mittkok.expressen.se/artikel/mitt-kok-kockarnas-10-basta-recept/';
+
+request(top10Url, (error, response, html) => {
+    if (error) {
+        console.error('Failed to fetch top 10', error);
+        return;
     }
+
+    const $recipes = cheerio.load(html);
+    const recipes = $recipes('.list-item--recept .list-item__link').map((i, r) => $recipes(r).attr('href')).toArray();
+
+    recipes.forEach(url => {
+        url = 'http:' + url;
+        request(url, (error, response, html) => {
+            if (error) {
+                console.error('Failed to fetch url', url, error);
+                return;
+            }
+
+            const $recipe = cheerio.load(html);
+
+            const title = $recipe('.recipe__title').text();
+            const portions = normalize($recipe('.recipe__ingredients--inner .recipe__portions').text());
+
+            const ingredients = $recipe('.recipe__ingredients--inner li').map((i, r) => normalize(normalize($recipe(r).text()))).toArray();
+
+            const recipe = {title, portions, ingredients, url};
+
+            const fileName = slugify(title) + '.json';
+
+            fs.writeFile('output/' + fileName, JSON.stringify(recipe), 'utf8', (err) => {
+                if (err) {
+                    console.error('Failed to create', fileName, err);
+                }
+                console.log('Created', fileName);
+            });
+
+        });
+    });
 });
 
-x(html, '.list-item--recept', [{
-    title: '.list-item__content__title',
-    link: '.list-item__link@href',
-    recipe: x('.list-item__link@href', '.recipe__ingredients--inner', [{
-        portions: '.recipe__portions | normalize',
-        ingredients: ['li | normalize']
-    }])
-}])(console.log);
-
-// http://mittkok.expressen.se/artikel/mitt-kok-kockarnas-10-basta-recept/
-/*
-x(html, '.list-item--recept', [{
-    title: '.list-item__content__title',
-    link: '.list-item__link@href'
-}])(console.log);
-*/
 
 /*
-x(html2, '.recipe__ingredients--inner', [{
-    portions: '.recipe__portions | normalize',
-    ingredients: ['li | normalize']
-}])(console.log);*/
+
+ */
