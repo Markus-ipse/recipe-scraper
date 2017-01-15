@@ -21,6 +21,4 @@ function scrapeTop10Recipes(cb) {
     });
 }
 
-module.exports = {
-    scrapeTop10Recipes
-};
+module.exports = scrapeTop10Recipes;

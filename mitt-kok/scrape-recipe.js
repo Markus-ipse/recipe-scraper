@@ -2,7 +2,7 @@ const cheerio = require('cheerio');
 const request = require('request');
 const curry = require('ramda/src/curry');
 
-const {getText} = require('./utils');
+const {getText} = require('./../utils');
 
 const scrapeRecipe = curry((cb, url) => {
 
