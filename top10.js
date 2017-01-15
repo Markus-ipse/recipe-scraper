@@ -1,6 +1,8 @@
 const cheerio = require('cheerio');
 const request = require('request');
+
 const scrapeRecipe = require('./scrapeRecipe');
+
 const top10Url = 'http://mittkok.expressen.se/artikel/mitt-kok-kockarnas-10-basta-recept/';
 
 function scrapeTop10Recipes(cb) {
