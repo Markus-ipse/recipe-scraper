@@ -25,6 +25,10 @@ const scrapeRecipe = curry((cb, url) => {
 
         const recipe = {title, portions, ingredients, url};
 
+        if (!title || !portions || ingredients.length === 0) {
+            return console.warn('Couldn\'t create create complete recipe', recipe);
+        }
+
         cb(null, recipe);
 
     });

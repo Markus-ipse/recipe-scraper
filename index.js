@@ -4,7 +4,8 @@ const path = require('path');
 const mkdirp = require('mkdirp');
 const curry = require('ramda/src/curry');
 
-const {scrapeTop10Recipes, scrapeRecipe} = require('./top10');
+const scrapeTop10Recipes = require('./top10-page');
+const scrapeCategoryPage = require('./catergory-page');
 
 const logger = (err, result) => {
     if (err) return console.error('Scraping failed:\n', err);
@@ -12,9 +13,18 @@ const logger = (err, result) => {
     console.log(result);
 };
 
-scrapeTop10Recipes(curry(write)('top10'));
+// scrapeTop10Recipes(curry(write)('top10'));
 
-// scrapeRecipe(logger, 'http://mittkok.expressen.se/recept/ungersk-gulasch/');
+const baseUrl = 'http://mittkok.expressen.se/recept-och-tips';
+// scrapeCategoryPage('/gratang-recept-fran-mitt-kok/', curry(write)('gratin'));
+// scrapeCategoryPage(baseUrl + '/grytor-recept-fran-mitt-kok-expressen/', curry(write)('casserole'));
+// scrapeCategoryPage(baseUrl + '/grytor-vegetariska-recept-fran-mitt-kok-expressen/', curry(write)('veg-casserole'));
+// scrapeCategoryPage(baseUrl + '/grytor-med-fisk-recept-fran-mitt-kok-expressen/', curry(write)('fish-casserole'));
+// scrapeCategoryPage(baseUrl + '/pajer-recept-fran-mitt-kok-expressen/', curry(write)('pie'));
+// scrapeCategoryPage('http://mittkok.expressen.se/kottfars/', curry(write)('minced-meat'));
+// scrapeCategoryPage('http://mittkok.expressen.se/pasta/', curry(write)('pasta'));
+// scrapeCategoryPage('http://mittkok.expressen.se/grilla/', curry(write)('grilled'));
+scrapeCategoryPage('http://mittkok.expressen.se/lax/', curry(write)('salmon'));
 
 function write(outputSubFolder, err, recipe) {
     if (err) return console.error('Scraping failed:\n', err);
