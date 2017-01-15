@@ -22,6 +22,5 @@ function scrapeTop10Recipes(cb) {
 }
 
 module.exports = {
-    scrapeTop10Recipes,
-    scrapeRecipe
+    scrapeTop10Recipes
 };
